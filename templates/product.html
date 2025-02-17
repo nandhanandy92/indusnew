@@ -1,0 +1,318 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- PAGE TITLE
+        ================================================== -->
+        <section class="page-title-section bg-img cover-background dark-overlay" data-overlay-dark="6"
+            data-background="../static/img/banner/page-title.jpg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="display-3">Products</h1>
+                        <ul>
+                            <li><a href="{{ url_for('index') }}">Home</a></li>
+                            <li><a href="{{ url_for('product') }}">Products</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="line-animated">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="p-1-9 p-sm-2-3 bg-white bottom-0 left d-inline-block position-absolute z-index-3"></div>
+            <div class="position-absolute shape-1 d-none d-sm-block"></div>
+            <div class="px-6 px-sm-9 py-3 py-sm-4 bg-white bottom-0 right d-inline-block position-absolute z-index-3">
+            </div>
+        </section>
+
+        <!-- ABOUT
+        ================================================== -->
+        <section class="pb-0 overflow-visible" style="padding: 20px 0 0 0;">
+            <div class="container position-relative">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-5 mb-lg-0 wow fadeIn" data-wow-delay="200ms">
+                        <div class="position-relative about-style-02 ps-sm-10 pt-sm-12 pb-sm-6">
+                            <div class="position-relative">
+                                <img src="../static/img/content/about2.jpg" class="z-index-1 position-relative" alt="...">
+                                <span class="about-shape1"></span>
+                                <span class="about-shape2"></span>
+                            </div>
+                            <img src="../static/img/content/about3.jpg" alt="..."
+                                class="position-absolute top-0 left z-index-2 d-none d-sm-block">
+                            <div
+                                class="d-inline-block p-6 bg-secondary top-10 opacity3 z-index-0 right-20 position-absolute">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="400ms">
+                        <div>
+                            <h2 class="h1 mb-4 mt-2 z-index-2 position-relative" style="color: #13214c;">Shop Premium
+                                Uniforms | Indus Fashions
+                            </h2>
+                            <p class="mb-1-9">
+                                Dear Honourable School Chairman and Member of UPSF Group, <br>
+
+                                Greetings from Indus Fashions, one of the largest manufacturers of School Notebooks,
+                                Sports Attire and Suppliers of Uniform Fabrics in South India. <br>
+
+                                We are pleased to announce that we have ventured into a dealership agreement with
+                                Darshan Valji, leading mill and uniform manufacturer in India, in order to provide the
+                                best and competitive rates to all our school clients. <br>
+
+                                As an inaugural dealership offer and promotion activity, we have extended our business
+                                to provide our estemeed customers with the ex-mill rates for the academic year 2025 in
+                                order to benefit from the fine quality fabrics and the never before market rates. <br>
+                                <b>Shirtings Rs.62/- onwards</b><br>
+                                  <b> Suitings Rs.130/- onwards</b><br>
+                               
+                                In addition to the above promotions, we are providing a 12% discount on our 60 GSM TNPL
+                                Notebooks and an astounding competitive rates on our T-Shirts and Track Pants(Sports
+                                Attire) from our partnered production units based in TamilNadu. <br>
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br>
+        <section class="position-relative" style="padding: 20px 0 0 0;">
+            <div class="container position-relative z-index-1">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8  col-xxl-8 mb-1-9 mb-lg-0 wow fadeIn" data-wow-delay="200ms"
+                        style="visibility: visible; animation-delay: 200ms; animation-name: fadeIn;">
+                        <div class="pe-lg-1-9 pe-xl-7">
+                            <h4 class="h1 mb-4 mt-2 z-index-2 position-relative" style="color: #13214c;">School Uniforms
+                            </h4>
+                            <ul class="list-style2 mb-1-9">
+                                <li><b>Uniforms
+                                    </b> <br> <span>Looking for top-quality school uniforms that represent your
+                                        institution’s identity?
+                                        We manufacture and supply custom-designed school uniforms tailored to your
+                                        specific needs, ensuring every student feels comfortable and confident.
+                                    </span>
+                                </li>
+                                <li><b>Features:
+                                    </b><span>
+                                        Skin-Friendly Fabrics: Breathable materials suitable for long hours of wear.
+                                        Durable & Easy Maintenance: Stays vibrant even after repeated washes.
+                                        Custom Embroidery: Add school logos, badges, and emblems for a professional
+                                        touch.
+                                        Perfect Fit for All Ages: From toddlers to teens, we provide accurate sizing
+                                        options.<br>
+                                        Why Choose Our School Uniforms?
+                                    </span><br><span>Anti-pilling, wrinkle-free fabric
+                                        Superior stitching for long-lasting wear
+                                        High color retention and fade resistance
+                                        👉 Bulk Order Discounts Available.
+                                        Let us help you create a lasting impression with premium school uniform
+                                        solutions.
+                                    </span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mt-1-9 wow fadeIn" data-wow-delay="200ms">
+                        <div class="text-center position-relative d-flex justify-content-center align-items-center">
+                            <img src="../static/img/about-sr/school-uniforms.png" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br>
+        <section class="position-relative" style="padding: 20px 0 0 0;">
+            <div class="container position-relative z-index-1">
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 mt-1-9 wow fadeIn" data-wow-delay="200ms">
+                        <div class="text-center position-relative d-flex justify-content-center align-items-center">
+                            <img src="../static/img/about-sr/sports.png" alt="...">
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-xxl-8 mb-1-9 mb-lg-0 wow fadeIn" data-wow-delay="200ms"
+                        style="visibility: visible; animation-delay: 200ms; animation-name: fadeIn;">
+                        <div class="pe-lg-1-9 pe-xl-7">
+                            <h4 class="h1 mb-4 mt-2 z-index-2 position-relative" style="color: #13214c;">Sports Attire
+                            </h4>
+                            <ul class="list-style2 mb-1-9">
+                                <li><span>Unite your team with custom-designed sportswear that delivers performance and
+                                        style.<br>
+                                        We offer a wide range of sports attire for schools, colleges, and corporate
+                                        teams, combining functionality with professional aesthetics.
+                                    </span>
+                                </li>
+                                <li><b>Product Range:
+                                    </b><span>Tracksuits,Jerseys,Shorts... <br>
+
+                                    </span></li>
+                                <li><b>Features: </b><span>Performance Fabrics: Moisture-wicking and stretchable for
+                                        peak performance.<br>
+                                        Custom Printing: Add team logos, names, and numbers with sublimation or
+                                        embroidery.<br>
+                                        Durability: Designed to withstand rigorous activities
+                                    <br></span></li>
+                                <span><li> <b>Benifits</b><br>
+                                        <b>Enhanced Team Unity:</b> Build camaraderie and a sense of belonging with cohesive, professional-looking uniforms.<br>
+                                        <b>Bulk Order Discounts:</b> Affordable pricing for large teams and organizations.
+                                    </span></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br>
+        <section class="position-relative" style="padding: 20px 0 0 0;">
+            <div class="container position-relative z-index-1">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-xxl-8 mb-1-9 mb-lg-0 wow fadeIn" data-wow-delay="200ms"
+                        style="visibility: visible; animation-delay: 200ms; animation-name: fadeIn;">
+                        <div class="pe-lg-1-9 pe-xl-7">
+                            <h4 class="h1 mb-4 mt-2 z-index-2 position-relative" style="color: #13214c;">Notebooks 
+                            </h4>
+                            <ul class="list-style2 mb-1-9">
+                                <li><span>Equip your students with high-quality notebook  essentials.
+                                        <br>
+                                        We supply customized and eco-friendly notebooks for schools and
+                                        colleges, ensuring every learner is prepared for success.
+                                    </span>
+                                </li>
+                                <li><b>Notebook Features:
+                                    </b><span>Available in various sizes (A4, A5, etc.) <br>
+                                        Durable covers with custom logos and branding
+                                        Eco-friendly paper options for sustainable institutions <br>
+                                        Products designed to withstand daily use, ensuring long-term satisfaction.
+                                    </span></li>
+                                <span><li><b>Designed for Success</b><br>
+                                    Our notebook essentials are thoughtfully crafted to support students in their academic journey
+                                    . Whether it’s note-taking, sketching, or planning, our high-quality products enhance learning 
+                                    experiences and foster productivity
+                                </span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mt-1-9 wow fadeIn" data-wow-delay="200ms">
+                        <div class="text-center position-relative d-flex justify-content-center align-items-center">
+                            <img src="../static/img/about-sr/notes.png" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br>
+        <section class="position-relative" style="padding: 20px 0 0 0;">
+            <div class="container position-relative z-index-1">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12 col-xxl-12 mb-1-9 mb-lg-0 wow fadeIn" data-wow-delay="200ms"
+                        style="visibility: visible; animation-delay: 200ms; animation-name: fadeIn;">
+                        <div class="pe-lg-1-9 pe-xl-7">
+                            <h2 class="h1 mb-4 mt-2 z-index-2 position-relative" style="color: #13214c;">Why Indus
+                                Fashions is the Best Choice
+                            </h2>
+                            <ul class="list-style2 mb-1-9">
+                                <li><b>Unmatched Quality</b> <br> <span>We use the finest materials to ensure maximum
+                                        comfort, durability, and style for every product we deliver.
+                                    </span>
+                                </li>
+                                <li><b>Custom Solutions
+                                    </b> <br> <span>Tailor-made designs for uniforms, sportswear, and notebooks to
+                                        reflect your institution’s values.
+
+                                    </span>
+                                </li>
+                                <li><b>Affordable Pricing
+                                    </b> <br> <span>We offer competitive prices and bulk discounts for schools and
+                                        corporate clients.
+
+                                    </span>
+                                </li>
+                                <li><b> Timely Delivery
+                                    </b> <br> <span>Our efficient production and logistics team guarantees on-time
+                                        delivery for all orders.
+
+                                    </span>
+                                </li>
+                                <li><b> Eco-Friendly Approach
+
+                                    </b> <br> <span>Sustainability matters to us. We prioritize environmentally friendly
+                                        fabrics and processes.
+
+
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br>
+        <section class="position-relative" style="padding: 20px 0 0 0;">
+            <div class="container position-relative z-index-1">
+                <div class="row justify-content-center">
+                    <h2 style="color: #13214c;">Frequently Asked Questions (FAQs) </h2>
+                    <div class="col-lg-12 col-xxl-12 mt-2 mb-lg-0 wow fadeIn" data-wow-delay="400ms"
+                        style="visibility: visible; animation-delay: 400ms; animation-name: fadeIn;">
+                        <div id="accordion" class="accordion-style">
+                            <div class="card mb-3">
+                                <div class="card-header" id="headingOne">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">1. Can I customize school uniforms with my logo?
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                    data-bs-parent="#accordion">
+                                    <div class="card-body">
+                                        Yes, we provide custom embroidery and printing for school logos and emblems
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card mb-3">
+                                <div class="card-header" id="headingTwo">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseTwo" aria-expanded="false"
+                                            aria-controls="collapseTwo">2. Do you offer discounts for bulk
+                                            orders?</button>
+                                    </h5>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#accordion">
+                                    <div class="card-body">
+                                        Absolutely! Contact us for bulk order pricing and special discounts.
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseThree" aria-expanded="false"
+                                            aria-controls="collapseThree">3. How long does it take to deliver an order?
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                    data-bs-parent="#accordion">
+                                    <div class="card-body">
+                                        We ensure on-time delivery within the agreed timeline, typically 2-4 weeks,
+                                        depending on order size.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br>
+        {% endblock %}
+ 

@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- PAGE TITLE
+        ================================================== -->
+        <section class="page-title-section bg-img cover-background dark-overlay" data-overlay-dark="6" data-background="../static/img/banner/page-title.jpg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="display-3">E-Catalog</h1>
+                        <ul>
+                            <li><a href="{{ url_for('index') }}">Home</a></li>
+                            <li><a href="#!">E-Catalog</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="line-animated">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="p-1-9 p-sm-2-3 bg-white bottom-0 left d-inline-block position-absolute z-index-3"></div>
+            <div class="position-absolute shape-1 d-none d-sm-block"></div>
+            <div class="px-6 px-sm-9 py-3 py-sm-4 bg-white bottom-0 right d-inline-block position-absolute z-index-3"></div>
+        </section>
+        <br>
+        <center>
+            <div class="srr-container">
+                <div class="srr-box">
+                    <a href="{{ url_for('school') }}" style="color: white;">
+                  <img src="../static/img/school/school.jpg" alt="Yuken">
+                  <div class="srr-box-title">School</div>
+                </a>
+                </div>
+                <div class="srr-box">
+                    <a href="{{ url_for('masterschool') }}" style="color: white;">
+                  <img src="../static/img/master-school/master-school.jpg" alt="Rexroth">
+                  <div class="srr-box-title">Master School</div></a>
+                </div>
+            </div>
+        </center>
+        <br>
+        <center>
+            <div class="srr-container">
+                <div class="srr-box">
+                    <a href="{{ url_for('corporate') }}" style="color: white;">
+                    <img src="../static/img/corporate/corporate.jpg" alt="Polyhydron">
+                    <div class="srr-box-title">Corporate</div>
+                    </a>
+                </div>
+                <div class="srr-box">
+                    <a href="{{ url_for('combocorporate') }}" style="color: white;">
+                    <img src="../static/img/combo-corporate/combo.jpg" alt="Polyhydron">
+                    <div class="srr-box-title">Combo Corporate</div></a>
+                  </div>
+            </div>
+        </center>
+        {% endblock %}

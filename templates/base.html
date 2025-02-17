@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- metas -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="keywords" content="INDUS FASHIONS">
+    <meta name="description" content="INDUS FASHIONS">
+
+    <!-- title  -->
+    <title>INDUS FASHIONS</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../static/img/logos/favicon.png">
+
+    <!-- plugins -->
+    <link rel="stylesheet" href="../static/css/plugins.css">
+
+    <!-- theme core css -->
+    <link href="../static/css/styles.css" rel="stylesheet">
+
+    <style>
+        .form-control::placeholder {
+    color: #000; /* Black placeholder */
+    opacity: 1;  /* Ensures it is fully opaque */
+}
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- PAGE LOADING
+    ================================================== -->
+     <div id="preloader"></div> 
+
+    <!-- MAIN WRAPPER
+    ================================================== -->
+    <div class="main-wrapper">
+
+        <!-- HEADER
+        ================================================== -->
+        <header class="header-style2">
+
+            <div class="top-bar bg-primary">
+                <div class="container-fluid px-lg-1-6 px-xl-2-5 px-xxl-2-9">
+                    <div class="row">
+                        <div class="col-md-9 col-xs-12">
+                            <div class="top-bar-info">
+                                <ul class="ps-0">
+                                    <li><i class="ti-mobile"></i><a href="tel:+91 98414 44488" style="color: white;">+91 98414 44488 </a></li>
+                                    <li class="d-none d-sm-inline-block"><i class="ti-email"></i><a href="mailto:indusfashions18@gmail.com" style="color: white;">indusfashions18@gmail.com</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-3 d-none d-md-block">
+                            <ul class="top-social-icon ps-0">
+                                <li>
+                                    <a href="https://www.justdial.com/jdmart/Vellore/Indus-Fashions-KATPADI-VELLORE/9999PX416-X416-160724181846-I1I7_BZDET/catalogue" target="_blank">
+                                      <img src="https://www.justdial.com/favicon.ico" alt="Justdial" style="width: 20px; height:20px;">
+                                    </a>
+                                  </li>
+                           </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navbar-default border-bottom">
+                <div class="container-fluid px-lg-1-6 px-xl-2-5 px-xxl-2-9">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-lg-12">
+                            <div class="menu_area alt-font">
+                                <nav class="navbar navbar-expand-lg navbar-light p-0">
+                                    <div class="navbar-header navbar-header-custom">
+                                        <!-- start logo -->
+                                        <a href="{{ url_for('index') }}">
+                                            <img src="../static/img/logo.png" alt="..." style="padding: 6px;max-width: 50%;">
+                                        </a>
+                                        <!-- end logo -->
+                                    </div>
+                                    <div class="navbar-toggler bg-primary"></div>
+                                    <!-- start menu area -->
+                                    <ul class="navbar-nav ms-auto" id="nav" style="display: none;">
+                                        <li>
+                                            <a href="{{ url_for('index') }}">Home</a>
+                                        </li>
+                                        <li>
+                                            <a href="{{ url_for('product') }}">Products</a>
+                                        </li>
+                                        <li>
+                                            <a href="{{ url_for('ecatalog') }}">E-Catalog</a>
+                                        </li>
+                                        <li>
+                                            <a href="{{ url_for('ourclients') }}">Our Clients</a>
+                                        </li>
+                                        <li>
+                                            <a href="{{ url_for('contact') }}">Contact Us</a>
+                                        </li>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        {% block content %}
+        {% endblock%}
+        
+                <!-- FOOTER
+        ================================================== -->
+        <footer class="footer1 position-relative pt-16 bg-dark" style="padding-top: 5rem; background-color: #13214c !important;">
+            <div class="container z-index-9 position-relative">
+                <div class="row mt-n5 pb-6 pb-lg-7 pb-xxl-8">
+                    <div class="col-md-6 col-lg-3 mt-5 wow fadeIn" data-wow-delay="200ms" style="visibility: visible; animation-delay: 200ms; animation-name: fadeIn;">                        
+                        <div class="footer-logo mb-1-9 pd-res">
+                            <a href="{{ url_for('index') }}"><img src="../static/img/logos/footerlogo.png" alt="..."></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 mt-5 wow fadeIn" data-wow-delay="300ms" style="visibility: visible; animation-delay: 300ms; animation-name: fadeIn;">
+                        <div class="ps-md-7">
+                            <h3 class="text-white h5 mb-1-9">Quick Links</h3>
+                            <ul class="footer-link mb-0 list-unstyled">
+                                <li class="mb-3"><a href="{{ url_for('index') }}">Home</a></li>
+                                <li class="mb-3"><a href="{{ url_for('product') }}">Products</a></li>
+                                <li class="mb-3"><a href="{{ url_for('ecatalog') }}">E - Catalog</a></li>
+                                <li class="mb-3"><a href="{{ url_for('ourclients') }}">Our Clients</a></li>
+                                <li class="mb-3"><a href="{{ url_for('contact') }}">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-5 mt-2-9 wow fadeIn" data-wow-delay="400ms" style="visibility: visible; animation-delay: 400ms; animation-name: fadeIn;">
+                        <div class="section-title-02 mb-1-9">
+                            <h2 class="display-25 font-weight-800 mb-0 text-white">Contact Us</h2>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <i class="ti-location-pin text-primary display-25 pe-3" style="color: white !important;"></i>
+                            <p class="mb-0 text-white w-80 w-xl-50 letter-spacing-1 h6" style="color: white !important; font-weight: 200;">
+                                <a href="https://maps.app.goo.gl/RdvsDBh7EqKNCnXQA" 
+                                   class="text-white" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: white !important;">
+                                    No.1, 14th East Cross Road, NAADT Ex-Servicemen,<br> Co-op Building, Gandhinagar, Vellore - 632 006.
+                                </a>
+                            </p>
+                        </div>
+                        
+                        <div class="d-flex">
+                            <i class="ti-mobile text-primary display-25 pe-3" style="color: white !important;"></i>
+                            <h5 class="mb-0 text-white letter-spacing-1 h6"><a href="tel:+91 98414 44488" style="color: white;font-weight: 400;">+91 98414 44488 </a></h5>
+                        </div>
+                        <div class="d-flex" style="padding-top: 10px;">
+                            <i class="ti-mobile text-primary display-25 pe-3" style="color: white !important;"></i>
+                            <h5 class="mb-0 text-white letter-spacing-1 h6"><a href="tel:+91 94455 44488" style="color: white;font-weight: 400;">+91 94455 44488</a></h5>
+                        </div>
+                        <div class="d-flex mb-4" style="padding-top: 10px;">
+                            <i class="ti-email text-primary display-25 pe-3" style="color: white !important;"></i>
+                            <h5 class="mb-0 text-white letter-spacing-1 h6"><a href="mailto:indusfashions18@gmail.com" style="color: white;font-weight: 200;">indusfashions18@gmail.com</a></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-top border-color-light-white z-index-9 position-relative wow fadeIn" data-wow-delay="200ms" style="visibility: visible; animation-delay: 200ms; animation-name: fadeIn;">
+                <div class="container">
+                    <div class="row align-items-center py-4">
+                        <div class="col-md-7 col-lg-6 text-center text-md-start order-2 order-md-1">
+                            <p class="d-inline-block text-white mb-0">©<span class="current-year">2025</span>&nbsp;&nbsp;INDUS FASHIONS</p>
+                        </div>
+                        <div class="col-md-5 col-lg-6 text-center text-md-end mb-3 mb-md-0 order-1 order-md-2">
+                            <p class="d-inline-block text-white mb-0">All Rights Reserved By <a href="https://exsfvsdvdvad.my.canva.site/martex-software-enterprises" class="text-primary text-secondary-hover" target="_blank" style="color: #e2d166 !important;">&nbsp;MarteX Software enterprises</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <!-- SCROLL TO TOP
+    ================================================== -->
+    <a href="#" class="scroll-to-top"><i class="fas fa-angle-up" aria-hidden="true"></i></a>
+
+    <!-- all js include start -->
+
+    <!-- jQuery -->
+    <script src="../static/js/jquery.min.js"></script>
+
+    <!-- popper js -->
+    <script src="../static/js/popper.min.js"></script>
+
+    <!-- bootstrap -->
+    
+    <script src="../static/js/core.min.js"></script>
+
+    <script src="../static/js/bootstrap.min.js"></script>
+
+    <!-- custom scripts -->
+    <script src="../static/js/main.js"></script>
+
+
+    <!-- all js include end -->
+
+</body>
+
+</html>
