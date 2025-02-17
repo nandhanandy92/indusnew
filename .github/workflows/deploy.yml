@@ -39,3 +39,16 @@ jobs:
           git pull origin main
           sudo systemctl restart indusfashion
           sudo systemctl restart nginx
+
+    - name: Wait for deployment to stabilize
+      run: sleep 60
+
+    - name: Health Check
+      run: |
+        response=$(curl -s -o /dev/null -w "%{http_code}" https://www.indusfashions.org)
+        if [ "$response" != "200" ]; then
+          echo "Deployment health check failed! Site returned HTTP $response"
+          exit 1
+        else
+          echo "Deployment successful! Site is responding with HTTP 200"
+        fi
