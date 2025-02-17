@@ -1,0 +1,13 @@
+[Unit]
+Description=Gunicorn instance to serve Indus Fashion application
+After=network.target
+
+[Service]
+User=www-data
+Group=www-data
+WorkingDirectory=/home/bitnami/indusnew
+Environment="PATH=/opt/bitnami/python/bin"
+ExecStart=/opt/bitnami/python/bin/gunicorn --config /home/bitnami/indusnew/deploy/gunicorn.conf.py wsgi:app
+
+[Install]
+WantedBy=multi-user.target
